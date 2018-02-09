@@ -15,6 +15,7 @@ import {
 import styled, { ThemeProvider } from 'styled-components';
 import { Button } from './Button';
 import { Button2 } from './Button2';
+import { Button3 } from './Button3';
 
 const StyledTouchable = styled.TouchableHighlight`
   align-items: center;
@@ -51,6 +52,10 @@ export default class App extends Component<Props> {
         <ThemeProvider theme={{ primary: false }}>
           <Button2>A secondary button</Button2>
         </ThemeProvider>
+
+        <Text style={{marginTop: 15, marginBottom: 15}}>Button 3:</Text>
+        <Button3 primary>A primary button</Button3>
+        <Button3>A secondary button</Button3>
       </View>
     );
   }
